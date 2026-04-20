@@ -5,3 +5,5 @@ USE sakila;
 SELECT * FROM actor; -- retrieved 200 records
 
 SELECT * FROM film; -- retrieved 1000 records
+
+
