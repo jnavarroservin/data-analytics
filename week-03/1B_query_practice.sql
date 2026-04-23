@@ -18,11 +18,18 @@ WHERE UnitsInStock = 0
 	AND UnitsOnOrder >= 1;
 -- ProductID 31 / Gorgonzola Telino / UnitsOnBackOrder 70
 
--- 4. Examine the products table. How does it identify the type (category) of each item sold?
-SELECT CompanyName, 
+/* 4. Examine the products table. How does it identify the type (category) of each item sold? Where can you find a list of all categories? Write a set of queries to answer these
+questions, ending with a query that creates a list of all the seafood items we carry */
+SELECT * 
 FROM products;
 -- So product table uses the FK 'CategoryID' as the identifier to relate to the categories table whose PK is CategoryID. 
 -- This is known as a 1-to-many relationship.
+SELECT CategoryID, CategoryName
+FROM categories; -- BECAUSE OF THIS QUERY I NOW KNOW SEAFOOD CATEGORY IS 8
+SELECT *
+FROM products
+WHERE CategoryID = 8
+	AND UnitsInStock >= 1;
 
 -- 5. Examine the products table again. How do you know what supplier each product comes from?
 -- Where can you find info on suppliers? Write a set of queries to find the specific identifier for "Tokyo Traders" 
