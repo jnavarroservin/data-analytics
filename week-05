@@ -1,0 +1,91 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyODYoDnL62FdZJhlH2Wd7G2",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/jnavarroservin/data-analytics/blob/master/week-05\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Xx-gYJF4C4s4",
+        "outputId": "278e74ea-2508-4f3a-ae27-4aee1cf8644f"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello world!\n",
+            "Hello world!\n"
+          ]
+        }
+      ],
+      "source": [
+        "print ('Hello world!')\n",
+        "\n",
+        "message = 'Hello world!'\n",
+        "print(message) # 'Hello world!' printed twice because I provided two different ways with the same ojective."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Displaying dollars and cents.\n",
+        "dollars = 3\n",
+        "cents = .50\n",
+        "print(dollars + cents)\n",
+        "cents = cents + .25\n",
+        "print(dollars + cents)\n",
+        "\n",
+        "d_str = '3 dollars'\n",
+        "c_str = '50 cents'\n",
+        "print(d_str + \" \" + c_str)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KnBEIoL-HD7r",
+        "outputId": "daac4b19-cd11-4d7a-81d7-b24bbf1d0ce6"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3.5\n",
+            "3.75\n",
+            "3 dollars 50 cents\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
