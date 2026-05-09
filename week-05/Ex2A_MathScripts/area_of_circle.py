@@ -13,3 +13,6 @@ print(f'The area of a circle with radius {radius} is: {area:.2f}')
 # Originally, my area formula appeared as <<area = round(math.pi, 2)>>
 # and after checking my results through Copilot it suggested I use the entire pi formula
 # to obtain the best results for my output. It offered an alternative to round my print statement.
+
+bank_bal = input("What is your current bank balance? ")
+print("Your balance is " + bank_bal)
