@@ -1,0 +1,68 @@
+/* Note the ratio of records between tables. 
+Is this ratio consistent with what you thought the data represented? 
+Yes, the ration of records are consistent with what the tables represent.
+Tables such as OrderDetails have more records/rows than Orders because a single order can contain multiple products
+but tables such as Categories or Regions have somewhat a couple records/rows. */
+
+
+-- What is the primary key of the table?
+/* 
+Categories: CategoryID
+Customers: CustomerID
+Employees: EmployeeID
+EmployeeTerritories: EmployeeID, TerritoryID
+OrderDetails: OrderID, ProductID
+Orders: OrderID
+Products: ProductID
+Region: RegionID
+Shippers: ShipperID
+Suppliers: SupplierID
+Territories: TerritoryID
+*/
+
+
+-- What are the parent tables of this table? (i.e. What tables do any foreign keys reference?*/
+/* 
+The parent tables for ORDERS:
+Customers, Employees, Shippers
+
+The parent tables for PRODUCTS:
+Categories, Suppliers
+
+The parent table for ODERDETAILS:
+Products, Orders
+*/
+
+
+-- What does a value in this column represent? What values might you see here?
+/* 
+FK_Orders_Customers: CustomerID value represents the individual who purchase and ties it to an order. 
+FK_Orders_Employees: Employee ID value represents the individual who sold/took the order. Taking credit for the transaction. 
+FK_Orders_Shippers: ShipVia (ShipperID) value represents of who will be transporting each order
+
+FK_Products_Categories: CategoryID represents the product type in which it belongs to a specific category.
+FK_Products_Suppliers: SupplierID represents the seller from which the products originates from. 
+
+FK_Order_Details_Orders: OrderID represents the order in which each product was ordered in. 
+						So, many products can have the same OrderID due to maybe a customer buying more than one product.
+FK_Order_Details_Products: ProductID represents the specific product sold
+*/
+
+
+-- Is this column a part of the primary key to this table? 
+/*
+OrderDetails is part of the Primary Key.
+EmployeeTerritores is part of the Primary Key
+*/
+
+-- Is this column a part of a foreign key that points to a record in another table? 
+
+
+-- Would this column be valuable to bring into our Power BI Model? Yes, or no? Why? 
+
+/* Do you believe this column is appropriately named for Data Analysis purposes?
+If not, what might be a more appropriate name? */
+
+-- What might be the data type and format for this column in a Power BI Model? 
+
+-- Can you think of any calculations where this column data might be used? 
